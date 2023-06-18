@@ -7,10 +7,8 @@ import { useState } from 'react';
 import Alert from './components/Alert';
 import {
   BrowserRouter,
-  Switch,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 
 
@@ -42,7 +40,7 @@ function App() {
   <Navbar mode={mode} toggleMode={toggleMode} title = "TextUtils" aboutText="About Us"></Navbar>
   <Alert alert={alert}></Alert>
    <div className="container my-3" >
-   <BrowserRouter>
+  
     <Routes>
           <Route path="/about" element={<About  mode={mode}/>} />
           
@@ -50,7 +48,7 @@ function App() {
             element= {<TextForms showAlert={showAlert} heading ="Enter the text to analyze" mode={mode}></TextForms>} /> 
            
     </Routes>
-  </BrowserRouter>
+  
   {/*  <TextForms showAlert={showAlert} heading ="Enter the text to analyze" mode={mode}></TextForms> */}
    
    </div>
