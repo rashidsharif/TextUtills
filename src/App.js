@@ -33,7 +33,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/NewsMonkey'>
       <div>
         <Navbar mode={mode} toggleMode={toggleMode} title="TextUtils" aboutText="About Us" />
         <Alert alert={alert} />

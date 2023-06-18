@@ -1,7 +1,7 @@
 {
   "name": "textutills",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "http://rashidsharif.github.io/TextUtills",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
